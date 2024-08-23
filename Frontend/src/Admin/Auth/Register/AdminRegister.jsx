@@ -8,7 +8,6 @@ import { Box, Container } from '@mui/system'
 import { toast } from 'react-toastify'
 import { RiEyeFill, RiEyeOffFill } from 'react-icons/ri';
 
-import CopyRight from '../../../Components/CopyRight/CopyRight'
 
 
 const AdminRegister = () => {
@@ -23,7 +22,7 @@ const AdminRegister = () => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value })
   }
   useEffect(() => {
-    let auth = localStorage.getItem('Authorization');
+    let auth = false;
     if (auth) {
       navigate("/")
     }
@@ -200,7 +199,6 @@ const AdminRegister = () => {
             </Grid>
           </Box>
         </Box>
-        <CopyRight sx={{ mt: 5 }} />
       </Container>
     </>
   )

@@ -16,4 +16,4 @@ const CopyRight = (props) => {
     )
 }
 
-export default CopyRight
+//export default CopyRight

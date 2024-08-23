@@ -8,8 +8,6 @@ import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { MdLockOutline } from 'react-icons/md'
 import { RiEyeFill, RiEyeOffFill } from 'react-icons/ri';
-import CopyRight from '../../../Components/CopyRight/CopyRight'
-
 
 
 const AdminLogin = () => {
@@ -151,7 +149,6 @@ const AdminLogin = () => {
           </Grid>
         </Box>
       </Box>
-      <CopyRight sx={{ mt: 8, mb: 4 }} />
     </Container>
   )
 }

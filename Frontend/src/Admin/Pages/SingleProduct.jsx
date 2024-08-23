@@ -7,7 +7,6 @@ import { Box, Button, Container, Dialog, DialogActions, DialogContent, DialogCon
 import { AiFillCloseCircle, AiFillDelete, AiOutlineFileDone } from 'react-icons/ai';
 import { toast } from 'react-toastify';
 import { Transition } from '../../Constants/Constant';
-import CopyRight from '../../Components/CopyRight/CopyRight';
 const SingleProduct = () => {
     const [product, setProduct] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -261,7 +260,6 @@ const SingleProduct = () => {
                     </DialogActions>
                 </Dialog>
             </Container >
-            <CopyRight sx={{ mt: 8, mb: 10 }} />
         </>
     )
 }

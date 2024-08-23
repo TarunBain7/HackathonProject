@@ -10,7 +10,6 @@ import { RiEyeFill, RiEyeOffFill } from 'react-icons/ri';
 import { TiArrowBackOutline } from 'react-icons/ti';
 
 import { Transition } from '../../Constants/Constant'
-import CopyRight from '../../Components/CopyRight/CopyRight'
 
 
 const UpdateDetails = () => {
@@ -282,7 +281,6 @@ const UpdateDetails = () => {
                     </DialogActions>
                 </Dialog>
             </Container >
-            <CopyRight sx={{ mt: 4, mb: 10 }} />
         </>
     )
 }

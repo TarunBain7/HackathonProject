@@ -4,6 +4,8 @@ import HomePage from './Pages/Home/HomePage';
 import Login from './Auth/Login/Login';
 import Register from './Auth/Register/Register';
 import Cart from './Pages/Cart/Cart';
+import Track from './Pages/Track/Track'
+import Queries from './Pages/Queries/Queries';
 import ProductDetail from './Pages/Detail/ProductDetail';
 import SingleCategory from './SingleCategory/SingleCategory';
 import MobileNavigation from './Navigation/MobileNavigation';
@@ -41,7 +43,9 @@ function App() {
             <Route path='/Detail/type/:cat/:id' element={<ProductDetail />} />
             <Route path='product/type/:cat' element={<SingleCategory />} />
             <Route path='/cart' element={<Cart />} />
+            <Route path="/track" element={<Track />} />
             <Route path='/wishlist' element={<Wishlist />} />
+            <Route path="/queries" element={<Queries />} />
             <Route path='/checkout' element={<CheckoutForm />} />
             <Route path='/update' element={<UpdateDetails />} />
             <Route path='/paymentsuccess' element={<PaymentSuccess />} />

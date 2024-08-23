@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify';
 import { Container } from '@mui/material';
 import BasicTabs from '../Components/AdminTabs';
-import CopyRight from '../../Components/CopyRight/CopyRight'
 const AdminHomePage = () => {
     const [user, setUser] = useState([]);
     const [isAdmin, setAdmin] = useState(false);
@@ -35,7 +34,7 @@ const AdminHomePage = () => {
                     <h1 style={{ textAlign: "center", margin: "20px 0", color: "#1976d2" }}>Dashboard </h1>
                     <BasicTabs user={user} getUser={getUser} />
                 </Container>)}
-            <CopyRight sx={{ mt: 8, mb: 10 }} />
+
 
         </>
     )

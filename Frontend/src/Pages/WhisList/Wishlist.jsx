@@ -9,14 +9,13 @@ import { Box, Button, Dialog, DialogActions, DialogContent, Typography } from '@
 import { AiFillCloseCircle, AiOutlineLogin } from 'react-icons/ai'
 import { EmptyCart } from '../../Assets/Images/Image';
 import { Transition } from '../../Constants/Constant'
-import CopyRight from '../../Components/CopyRight/CopyRight'
 
 const Wishlist = () => {
     const { wishlistData, setWishlistData } = useContext(ContextFunction)
     const [openAlert, setOpenAlert] = useState(false);
 
     let authToken = localStorage.getItem('Authorization')
-    let setProceed = authToken ? true : false
+    let setProceed =  true;
     let navigate = useNavigate()
     useEffect(() => {
         getWishList()
@@ -39,9 +38,9 @@ const Wishlist = () => {
         if (setProceed) {
             try {
                 const deleteProduct = await axios.delete(`${process.env.REACT_APP_DELETE_WISHLIST}/${product._id}`, {
-                    headers: {
-                        'Authorization': authToken
-                    }
+                    //headers: {
+                        //'Authorization': authToken
+                    //}
                 })
                 setWishlistData(wishlistData.filter(c => c.productId._id !== product.productId._id))
                 toast.success("Removed From Wishlist", { autoClose: 500, theme: 'colored' })
@@ -92,7 +91,6 @@ const Wishlist = () => {
                     <Button variant='contained' color='error' endIcon={<AiFillCloseCircle />} onClick={handleClose}>Close</Button>
                 </DialogActions>
             </Dialog>
-            <CopyRight sx={{ mt: 8, mb: 10 }} />
         </>
     )
 }

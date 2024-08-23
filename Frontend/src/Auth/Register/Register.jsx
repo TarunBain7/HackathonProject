@@ -6,7 +6,6 @@ import { Avatar, Button, Checkbox, CssBaseline, FormControlLabel, Grid, InputAdo
 import { MdLockOutline } from 'react-icons/md'
 import { Box, Container } from '@mui/system'
 import { toast } from 'react-toastify'
-import CopyRight from '../../Components/CopyRight/CopyRight'
 import { RiEyeFill, RiEyeOffFill } from 'react-icons/ri';
 
 
@@ -193,7 +192,6 @@ const Register = () => {
             </Grid>
           </Box>
         </Box>
-        <CopyRight sx={{ mt: 5 }} />
       </Container>
     </>
   )

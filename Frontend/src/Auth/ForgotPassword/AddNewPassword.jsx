@@ -5,7 +5,6 @@ import { Box, Container } from '@mui/system'
 import { MdLockOutline } from 'react-icons/md'
 import axios from 'axios'
 import { toast } from 'react-toastify'
-import CopyRight from '../../Components/CopyRight/CopyRight'
 import { RiEyeFill, RiEyeOffFill } from 'react-icons/ri';
 
 
@@ -88,7 +87,6 @@ const AddNewPassword = () => {
 
                 </Box>
             </Box>
-            <CopyRight sx={{ mt: 8, mb: 4 }} />
         </Container>
     )
 }

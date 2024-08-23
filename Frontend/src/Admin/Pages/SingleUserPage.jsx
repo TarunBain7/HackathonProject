@@ -7,7 +7,6 @@ import UserReviewItem from '../Components/UserData/UserReviewItem';
 import { useParams } from 'react-router-dom';
 import { Container } from '@mui/material';
 import UserOrderItem from '../Components/UserData/UserOrderItem';
-import CopyRight from '../../Components/CopyRight/CopyRight';
 
 const SingleUserPage = () => {
     const { id } = useParams();
@@ -35,7 +34,6 @@ const SingleUserPage = () => {
                 <UserWishlistItem commonGetRequest={commonGetRequest} authToken={authToken} id={id} />
                 <UserReviewItem commonGetRequest={commonGetRequest} authToken={authToken} id={id} />
             </Container >
-            <CopyRight sx={{ mt: 8, mb: 10 }} />
 
         </>
     )

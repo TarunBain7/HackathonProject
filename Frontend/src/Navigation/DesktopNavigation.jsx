@@ -1,6 +1,6 @@
 import './Desktop.css'
 import React, { useContext, useEffect, useState } from 'react'
-import { AiOutlineHeart, AiOutlineShoppingCart, AiFillCloseCircle } from 'react-icons/ai'
+import { AiFillCloseCircle, AiOutlineEnvironment, AiOutlineForm } from 'react-icons/ai'
 import { CgProfile } from 'react-icons/cg'
 import { FiLogOut } from 'react-icons/fi'
 import { Link, NavLink, useNavigate } from 'react-router-dom';
@@ -27,7 +27,7 @@ const DesktopNavigation = () => {
       <nav className='nav'>
         <div className="logo">
           <Link to='/'>
-            <span >Shop It</span>
+            <span >Cyncly</span>
           </Link>
         </div>
         <div className="nav-items">
@@ -45,15 +45,15 @@ const DesktopNavigation = () => {
 
             <li className="nav-links">
               <Tooltip title='Cart'>
-                <NavLink to="/cart">
-                  <span className='nav-icon-span'>Cart    <Badge badgeContent={setProceed ? cart.length : 0}> <AiOutlineShoppingCart className='nav-icon' /></Badge></span>
+                <NavLink to="/track">
+                  <span className='nav-icon-span'>Track    <Badge badgeContent={setProceed ? cart.length : 0}><AiOutlineEnvironment className='nav-icon' /></Badge></span>
                 </NavLink>
               </Tooltip>
             </li>
             <li className="nav-links">
               <Tooltip title='Wishlist'>
-                <NavLink to="/wishlist">
-                  <span className='nav-icon-span'>Wishlist  <Badge badgeContent={setProceed ? wishlistData.length : 0}> <AiOutlineHeart className='nav-icon' /></Badge></span>
+                <NavLink to="/queries">
+                  <span className='nav-icon-span'>Queries  <Badge badgeContent={setProceed ? wishlistData.length : 0}> <AiOutlineForm className='nav-icon' /></Badge></span>
                 </NavLink>
               </Tooltip>
             </li>

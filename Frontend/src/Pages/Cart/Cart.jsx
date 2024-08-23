@@ -20,7 +20,6 @@ import './Cart.css'
 import OrderSummary from './OrderSummary';
 import { EmptyCart } from '../../Assets/Images/Image';
 import { Transition } from '../../Constants/Constant';
-import CopyRight from '../../Components/CopyRight/CopyRight';
 
 
 
@@ -34,7 +33,7 @@ const Cart = () => {
 
     const navigate = useNavigate()
     let authToken = localStorage.getItem('Authorization')
-    let setProceed = authToken ? true : false
+    let setProceed =   true;
 
 
     useEffect(() => {
@@ -173,7 +172,6 @@ const Cart = () => {
                     <Button variant='contained' color='error' endIcon={<AiFillCloseCircle />} onClick={handleClose}>Close</Button>
                 </DialogActions>
             </Dialog>
-            <CopyRight sx={{ mt: 8, mb: 10 }} />
         </>
     )
 }

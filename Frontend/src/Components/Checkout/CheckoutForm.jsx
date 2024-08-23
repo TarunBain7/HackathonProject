@@ -8,7 +8,6 @@ import { ContextFunction } from '../../Context/Context'
 import { Link, useNavigate } from 'react-router-dom'
 import { profile } from '../../Assets/Images/Image'
 import { toast } from 'react-toastify'
-import CopyRight from '../CopyRight/CopyRight'
 import { Transition, handleClose } from '../../Constants/Constant'
 import { AiFillCloseCircle, AiOutlineSave } from 'react-icons/ai'
 
@@ -176,7 +175,6 @@ const CheckoutForm = () => {
                 </Dialog>
 
             </Container >
-            <CopyRight sx={{ mt: 8, mb: 10 }} />
 
         </>
     )

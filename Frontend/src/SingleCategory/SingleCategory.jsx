@@ -7,7 +7,6 @@ import { Box, Button, MenuItem, FormControl, Select } from '@mui/material'
 import Loading from '../Components/loading/Loading'
 import { BiFilterAlt } from 'react-icons/bi';
 import ProductCard from '../Components/Card/Product Card/ProductCard'
-import CopyRight from '../Components/CopyRight/CopyRight'
 
 
 
@@ -115,7 +114,6 @@ const SingleCategory = () => {
                     ))}
                 </Container>
             </Container >
-            <CopyRight sx={{ mt: 8, mb: 10 }} />
         </>
     )
 }

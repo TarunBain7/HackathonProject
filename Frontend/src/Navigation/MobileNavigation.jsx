@@ -20,7 +20,7 @@ const MobileNavigation = () => {
     const navigate = useNavigate()
 
     let authToken = localStorage.getItem('Authorization')
-    let setProceed = authToken !== null ? true : false
+    let setProceed = true
 
     useEffect(() => {
         getCart(setProceed, setCart, authToken)

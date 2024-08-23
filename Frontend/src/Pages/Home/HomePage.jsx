@@ -8,7 +8,6 @@ import CategoryCard from '../../Components/Category_Card/CategoryCard';
 import BannerData from '../../Helpers/HomePageBanner';
 import Carousel from '../../Components/Carousel/Carousel'
 import SearchBar from '../../Components/SearchBar/SearchBar'
-import CopyRight from '../../Components/CopyRight/CopyRight'
 const HomePage = () => {
     const { setCart } = useContext(ContextFunction)
     let authToken = localStorage.getItem('Authorization')
@@ -49,7 +48,6 @@ const HomePage = () => {
                     }
                 </Container>
             </Container >
-            <CopyRight sx={{ mt: 8, mb: 10 }} />
         </ >
     )
 }

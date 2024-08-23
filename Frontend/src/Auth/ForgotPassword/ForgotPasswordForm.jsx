@@ -4,7 +4,6 @@ import { Box, Container } from '@mui/system'
 import { MdLockOutline, MdMailOutline } from 'react-icons/md'
 import axios from 'axios'
 import { toast } from 'react-toastify'
-import CopyRight from '../../Components/CopyRight/CopyRight'
 
 
 const ForgotPasswordForm = () => {
@@ -65,7 +64,6 @@ const ForgotPasswordForm = () => {
                         </Box>
 
                     </Box>
-                    <CopyRight sx={{ mt: 8, mb: 4 }} />
                 </Container >
                 :
                 <Box

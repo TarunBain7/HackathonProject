@@ -3,7 +3,6 @@ import { AiOutlineFileDone } from 'react-icons/ai'
 import { Box, Button, Typography } from '@mui/material'
 import { payment } from '../../Assets/Images/Image'
 import './Payment.css'
-import CopyRight from '../../Components/CopyRight/CopyRight'
 const PaymentSuccess = () => {
     const searchParams = useSearchParams()[0]
     const referenceNumber = searchParams.get('reference')
@@ -23,7 +22,6 @@ const PaymentSuccess = () => {
                     </div>
                 </Box>
             </div >
-            <CopyRight sx={{ mt: 8, mb: 10 }} />
         </>
     )
 }

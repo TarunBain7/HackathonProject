@@ -26,7 +26,6 @@ import { ContextFunction } from '../../Context/Context';
 import ProductReview from '../../Components/Review/ProductReview';
 import ProductCard from '../../Components/Card/Product Card/ProductCard';
 import { Transition, getSingleProduct } from '../../Constants/Constant';
-import CopyRight from '../../Components/CopyRight/CopyRight';
 
 
 
@@ -41,7 +40,7 @@ const ProductDetail = () => {
 
 
     let authToken = localStorage.getItem('Authorization')
-    let setProceed = authToken ? true : false
+    let setProceed =   true 
 
 
     useEffect(() => {
@@ -261,7 +260,6 @@ const ProductDetail = () => {
                 </Box>
 
             </Container >
-            <CopyRight   sx={{ mt: 8, mb: 10 }} />
 
         </>
     )
